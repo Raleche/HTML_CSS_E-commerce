@@ -546,3 +546,73 @@ nav .links a {
   }
 
 }
+
+/*<--- Footer Style --> */
+.container {
+  min-width: 961px;
+  margin: 0 auto;
+  padding: 0 30px; 
+}
+
+h1, h2 {
+  padding-bottom: 20px;
+}
+.footer {
+  background-color: #EFEFEF;
+  color: black;
+  font-weight: 400px;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerbox {
+  flex: 1;
+  margin: 20px 10px;
+  padding: 15px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+.fbm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input {
+  padding: 5px 20px;
+}
+
+.margini a {
+  margin: 20px; 
+  padding: 20px;
+  color:black;
+}
+
+@media(max-width: 960px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
