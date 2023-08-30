@@ -168,6 +168,162 @@ nav .links a {
   gap: 16px;
 }
 
+/* Products section */
+.products-heading h2 {
+  text-align: center;
+  margin: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+
+  justify-items: center;
+}
+
+.chair-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/chair.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cup-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/cup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bag-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/classic-bag.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pen-holder {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/desk-pen-holder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.key-holder {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/key_holder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cotton_canvas {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/blue_bag.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.holder {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/holder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.women {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url("../images/pink_bag.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.chair-content p,
+.cup-content p,
+.bag-content p,
+.pen-holder p,
+.key-holder p,
+.cotton_canvas p,
+.holder p,
+.women p {
+  width: 141px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
 
 /* small screen like mobile devices */
 @media (max-width: 480px) {
@@ -188,6 +344,24 @@ nav .links a {
     width: 138px;
     height: 51px;
     text-align: center;
+  }
+
+  /* Products section */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .chair-content,
+  .cup-content,
+  .bag-content,
+  .pen-holder,
+  .key-holder,
+  .cotton_canvas,
+  .holder,
+  .women  {
+    width: 340px;
+    height: 340px;
   }
 }
 
@@ -225,5 +399,18 @@ nav .links a {
     width: 138px;
     height: 51px;
     text-align: center;
+  }
+
+  /* Products section */
+  .chair-content,
+  .cup-content,
+  .bag-content,
+  .pen-holder,
+  .key-holder,
+  .cotton_canvas,
+  .holder,
+  .women  {
+    width: 340px;
+    height: 340px;
   }
 }
