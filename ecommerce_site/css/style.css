@@ -71,7 +71,7 @@ input {
   padding-bottom: 20px;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 960px) {
   .header .container {
     flex-direction: column;
     padding-top: 20px;
@@ -90,6 +90,3 @@ input {
   }
 }
 
-/* li i {
-  margin-right: 20px;
-} */
