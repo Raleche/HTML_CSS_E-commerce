@@ -148,6 +148,21 @@ nav .links a {
   padding: 15px;
 }
 
+#cat-line {
+  position: relative;
+  display: inline-block;
+}
+
+#cat-line::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: #000;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
 .baskets-content {
   background-image: url(../images/baskets.png);
   background-position: center;
@@ -330,6 +345,8 @@ nav .links a {
 
   justify-items: center;
   justify-content: space-around;
+
+  margin-bottom: 50px;
 }
 
 .optimization-content {
@@ -360,9 +377,7 @@ nav .links a {
   position: relative;
 }
 
-.news1,
-.news2,
-.news3 {
+.news {
   width: 282px;
   position: absolute;
   top: 250px;
@@ -450,9 +465,7 @@ nav .links a {
     position: relative;
   }
 
-  .news1,
-  .news2,
-  .news3 {
+  .news {
     position: absolute;
     top: 230px;
     left: 20px;
@@ -529,9 +542,7 @@ nav .links a {
     height: 330px;
   }
 
-  .news1,
-  .news2,
-  .news3 {
+  .news {
     position: absolute;
     top: 200px;
     left: 20px;
