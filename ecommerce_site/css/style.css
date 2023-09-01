@@ -205,8 +205,8 @@ nav .links a {
 }
 
 .chair-content {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/chair.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/chair.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -220,8 +220,8 @@ nav .links a {
 }
 
 .cup-content {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/cup.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/cup.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -235,8 +235,8 @@ nav .links a {
 }
 
 .bag-content {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/classic-bag.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/classic-bag.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -250,8 +250,8 @@ nav .links a {
 }
 
 .pen-holder {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/desk-pen-holder.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/desk-pen-holder.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -265,8 +265,8 @@ nav .links a {
 }
 
 .key-holder {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/key_holder.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/key_holder.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -280,8 +280,8 @@ nav .links a {
 }
 
 .cotton_canvas {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/blue_bag.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/blue_bag.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -295,8 +295,8 @@ nav .links a {
 }
 
 .holder {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/holder.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/holder.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -310,8 +310,8 @@ nav .links a {
 }
 
 .women {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-  url("../images/pink_bag.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/pink_bag.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 400px;
@@ -357,7 +357,7 @@ nav .links a {
   background-size: cover;
   width: 380px;
   height: 380px;
- 
+
 
   position: relative;
 }
@@ -453,7 +453,7 @@ nav .links a {
   .key-holder,
   .cotton_canvas,
   .holder,
-  .women  {
+  .women {
     width: 340px;
     height: 340px;
   }
@@ -527,7 +527,7 @@ nav .links a {
   .key-holder,
   .cotton_canvas,
   .holder,
-  .women  {
+  .women {
     width: 340px;
     height: 340px;
   }
@@ -585,14 +585,26 @@ h2 {
 
 .footer .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footerbox {
-  flex: 1;
   margin: 20px 10px;
   padding: 15px 20px;
+}
+
+.footerbox .leftbox {
+  display: flex;
+  gap: 10px;
+  flex-direction: column; 
+}
+
+.leftbox .locationaddress,
+.leftbox .email,
+.leftbox .telephonenumber {
+  display:flex; 
+  gap: 10px;
 }
 
 ul {
@@ -606,13 +618,26 @@ ul {
 
 input {
   padding: 5px 20px;
+  width: 0 auto;
+  margin-top: 0px;
+  ;
+}
+
+.fform {
+  display: flex;
+  padding-left: 20px;
 }
 
 .margini a {
-  margin: 20px;
-  padding: 20px;
+  margin: 0px;
+  padding: 40px;
   color: black;
 }
+
+.footerbox p {
+  margin-bottom: 30px;
+}
+
 
 @media(max-width: 960px) {
   .header .container {
@@ -633,21 +658,18 @@ input {
   }
 }
 
-@media(max-width: 480px) {
-  .header .container {
-    flex-direction: column;
-    padding-top: 20px;
-    text-align: center;
+/* small screen like mobile devices */
+@media (max-width: 480px) {
+  .container {
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 0 30px;
   }
 
-  .boxes .container {
-    display: block;
-    text-align: center;
+  .margini a {
+    margin: 5%;
+    padding: 20px;
+    color: black;
   }
 
-  .footer .container {
-    flex-direction: column;
-    padding-top: 20px;
-    text-align: center;
-  }
 }
