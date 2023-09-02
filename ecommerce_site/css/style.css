@@ -579,71 +579,70 @@ nav .links a {
 }
 
 /*<--- Footer Style --> */
-.container {
-  min-width: 961px;
-  margin: 0 auto;
-  padding: 0 30px; 
-}
-
-h1, h2 {
-  padding-bottom: 20px;
-}
 .footer {
-  background-color: #EFEFEF;
-  color: black;
-  font-weight: 400px;
-  line-height: 24px;
-  font-size: 16px;
-  margin-bottom: 0px;
-  margin-top: 10px;
+  background-color: #efefef;
+  height: 350px;
 }
 
-.footer .container {
-  display: flex;
+.footer1 {
+  width: 1280px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+#tmart-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  position: relative;
+  top: 50px;
+  left: 90px;
+}
+
+hr {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 250px;
+  justify-items: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 300px;
 }
 
-.footerbox {
-  flex: 1;
-  margin: 20px 10px;
-  padding: 15px 20px;
-}
-
-ul {
-  list-style-type: none;
-}
 .fbm {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-input {
-  padding: 5px 20px;
+  margin-top: 20px;
+  margin-left: 400px;
 }
 
 .margini a {
-  margin: 20px; 
-  padding: 20px;
-  color:black;
+  color: #000;
 }
 
-@media(max-width: 960px) {
-  .header .container {
-    flex-direction: column;
-    padding-top: 20px;
-    text-align: center;
-  }
+#map-pin,
+#mail,
+#phone {
+  display: flex;
+  gap: 15px;
+}
 
-  .boxes .container {
-    display: block;
-    text-align: center;
-  }
+.footerbox1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  .footer .container {
-    flex-direction: column;
-    padding-top: 20px;
-    text-align: center;
-  }
+input[type=text] {
+  width: 336px;
+  height: 40px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
 }
 
