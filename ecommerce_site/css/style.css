@@ -585,7 +585,7 @@ nav .links a {
 }
 
 /*<--- Footer Style --> */
-#footer {
+.footer {
   background-color: #efefef;
   height: 350px;
 }
