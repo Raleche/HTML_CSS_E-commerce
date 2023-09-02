@@ -446,6 +446,7 @@ nav .links a {
   }
 
   .message-content {
+    width: 375px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -459,6 +460,7 @@ nav .links a {
 
   /* Products section */
   .products {
+    width: 375px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
@@ -476,6 +478,10 @@ nav .links a {
   }
 
   /* Recent news Section */
+  .blog {
+    width: 375px;
+  }
+
   .optimization-content,
   .seo-content,
   .marketing-content {
@@ -579,7 +585,7 @@ nav .links a {
 }
 
 /*<--- Footer Style --> */
-.footer {
+#footer {
   background-color: #efefef;
   height: 350px;
 }
