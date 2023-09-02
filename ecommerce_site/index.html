@@ -1,191 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- feather icons -->
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="https://unpkg.com/feather-icons"></script>
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
-        <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Ecommerce-website</title>
   </head>
   <body>
-        <header>
-            <!-- navigation menu -->
-            <nav>
-                <!-- logo -->
-                <div class="image">
-                    <img src="./images/logo_white.png" alt="TMAT logo" />
-                </div>
-
-                <!-- nav-links -->
-                <ul class="links">
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#blog">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#shop">Shop</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-
-                <!-- nav icons -->
-                <div class="icons">
-                    <div><i data-feather="user"></i></div>
-                    <div><i data-feather="shopping-cart"></i></div>
-                    <div><i data-feather="menu"></i></div>
-                </div>
-            </nav>
-
-            <!-- Hero -->
-            <div class="hero_content">
-                <div class="content">
-                <h1>New Product Collection</h1>
-                <p>
-                    <a>SHOP NOW</a>
-                </p>
-                </div>
-            </div>
-        </header>
-
-        <!-- Message Section -->
-        <section class="message-content">
-            <div class="furniture-content">
-                <div class="message1">
-                    <h3>New Furniture Collection</h3>
-                    <p>
-                        <a href="#" id="cat-line">SHOP NOW</a>
-                    </p>
-                </div>
-            </div>
-            <div class="baskets-content">
-                <div class="message2">
-                    <h3>New Baskets Collection</h3>
-                    <p>
-                        <a href="#" id="cat-line">SHOP NOW</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Products Section -->
-        <div class="products-heading">
-            <h2>Best Products</h2>
+    <header>
+      <nav>
+        <div class="image">
+          <img src="./images/logo_white.png" alt="logo" />
         </div>
-        <section class="products">
-            <div class="chair-content">
-                <p>Christopher Knight Furniture</p>
-                <p>$235.23</p>
-            </div>
-            <div class="cup-content">
-                <p>Wheat Straw unbreakable cup</p>
-                <p>$67.15</p>
-            </div>
-            <div class="bag-content">
-                <p>Adidas Classic Bag</p>
-                <p>$49.82</p>
-            </div>
-            <div class="pen-holder">
-                <p>Desk Pencil-Pen Holder</p>
-                <p>$22.30</p>
-            </div>
-            <div class="key-holder">
-                <p>Ripple Creak Key Holder</p>
-                <p>$8.13</p>
-            </div>
-            <div class="cotton_canvas">
-                <p>Economical Cotton Canvas</p>
-                <p>$11.08</p>
-            </div>
-            <div class="holder">
-                <p>Michael Kors Original</p>
-                <p>$15.10</p>
-            </div>
-            <div class="women">
-                <p>Bostanten Women Leather</p>
-                <p>$234.26</p>
-            </div>
-        </section>
-
-       <!-- Recent News -->
-       <div class="recent-news">
-           <h2>Recent News</h2>
-       </div>
-        <section class="blog">
-            <div class="optimization-content">
-                <div class="date">
-                    <p>20 <span id="may">MAY</span></p>
-                </div>
-                <div class="news">
-                    <p>How to Optimize Your eCommerce Store for Better Conversions</p>
-                </div>
+        <ul class="links">
+          <li>
+            <a>Portfolio</a>
+          </li>
+          <li>
+            <a>Blog</a>
+          </li>
+          <li>
+            <a>Shop</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+        <div class="icons">
+          <div>
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div class="hero_content">
+        <div class="content">
+          <p>New Product Collection</p>
+          <h6>
+            <a>SHOP NOW</a>
+          </h6>
+        </div>
+      </div>
+    </header>
+    <!-- main products -->
+    <main>
+      <div class="wraper_shop_now">
+        <div class="shop">
+          <div class="">
+            <img src="./images/furn.jpg" class="shop_image" />
+          </div>
+          <span class="shop_now">
+            <p>New Furniture Collection</p>
+            <h6 class="now">SHOP NOW</h6>
+          </span>
+        </div>
+        <div class="shop">
+          <img src="./images/bask.jpg" class="shop_image" />
+          <span class="shop_now">
+            <p>New Baskets Collection</p>
+            <h6 class="now">SHOP NOW</h6>
+          </span>
+        </div>
+      </div>
+      <section>
+        <h2>Best Products</h2>
+        <div class="wrapper_product">
+          <div class="product">
+            <img
+              src="./images/pr1.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Christopher Knight Furniture</p>
+              <p>$235.23</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr2.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Wheat Strow unbreakable cup</p>
+              <p>$235.23</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr3.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Adidas Classic Bag</p>
+              <p>$49.82</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr4.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Desk Pencil-Pen Holder</p>
+              <p>$235.23</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr5.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Ripple Creak Key Holder</p>
+              <p>$235.23</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr6.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Economical Cotton Canvas</p>
+              <p>$11.08</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr7.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Michael Kors Original</p>
+              <p>$15.10</p>
+            </span>
+          </div>
+          <div class="product">
+            <img
+              src="./images/pr8.png"
+              class="product_image"
+              alt="product_image"
+            />
+            <span class="product_content">
+              <p>Bostanten Women Leather</p>
+              <p>$234.26</p>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Recent News</h2>
+        <div class="recent_news">
+          <div class="recent">
+            <img
+              src="./images/b1.jpg"
+              alt="recent_news_image"
+              class="recent_news_image"
+            />
+            <div class="recent_content">
+              <span class="date">
+                <p>20</p>
+                <span>MAY</span><br />
+              </span>
+              <span class="recent_text">
                 <p>
-                    <a href="#" id="cat-line">READ MORE</a>
+                  How to Optimize Your eCommerce Store for Better Conversions
                 </p>
+                <h6>READ MORE</h6>
+              </span>
             </div>
-            <div class="seo-content">
-                <div class="date">
-                    <p>13 <span id="may">MAY</span></p>
-                </div>
-                <div class="news">
-                    <p>Understanding and Implementing SEO for eCommerce Success</p>
-                </div>
+          </div>
+          <div class="recent">
+            <img
+              src="./images/b2.jpg"
+              alt="recent_news_image"
+              class="recent_news_image"
+            />
+            <div class="recent_content">
+              <span class="date">
+                <p>13</p>
+                <span>MAY</span><br />
+              </span>
+              <span class="recent_text">
+                <p>Understanding and implementing SEO for eCommerce Success</p>
+                <h6>READ MORE</h6>
+              </span>
+            </div>
+          </div>
+          <div class="recent">
+            <img
+              src="./images/b3.jpg"
+              alt="recent_news_image"
+              class="recent_news_image"
+            />
+            <div class="recent_content">
+              <span class="date">
+                <p>04</p>
+                <span>MAY</span><br />
+              </span>
+              <span class="recent_text">
                 <p>
-                    <a href="#" id="cat-line">READ MORE</a>
+                  Effective Email Marketing Strategies for eCommerce Business
                 </p>
+                <h6>READ MORE</h6>
+              </span>
             </div>
-            <div class="marketing-content">
-                <div class="date">
-                    <p>04 <span id="may">MAY</span></p>
-                </div>
-                <div class="news">
-                    <P>Effective Email Marketing Strategies for eCommerce Businesses</P>
-                </div>
-                <p>
-                    <a href="#" id="cat-line">READ MORE</a>
-                </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer_content">
+        <div class="footer_main_content">
+          <img src="./images/logo.png" alt="logo" />
+          <div>
+            <div class="contact">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>194 Main Rd T,FS Rayed, USA</p>
             </div>
-        </section>
-
-        <!-- Footer section -->
-        <footer class="footer">
-            <div class="footer1">
-                <h2 id="tmart-heading">TMART</h2>
-                <div class="container1">
-                    <div class="footerbox">
-                        <ul>
-                            <li class="margini" id="map-pin"><i data-feather="map-pin"> </i><a>194 Main Rd T, FS Rayed, USA</a></li>
-                            <li class="margini" id="mail"><i data-feather="mail"></i><a>info@tmart.org</a></li>
-                            <li class="margini" id="phone"><i data-feather="phone-call"></i><a>+233 244 244 244</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerbox1">
-                        <p>Subscribe to our newsletter and get 10% off your first purchase.</p>
-                        <form class="fform">
-                            <input type="text" name="fform" placeholder="Enter email address">
-                        </form>
-                    </div>
-                </div>
+            <div class="contact">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@tmart.org</p>
             </div>
-            <hr>
-            <div class="container2">
-                <div class="fbm">
-                    <p>&copy; Tmart - All rights reserved. </p>
-                </div>
+            <div class="contact">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>+233244244244</p>
             </div>
-        </footer>
-
-        <script>
-            feather.replace();
-        </script>
+            <br />
+          </div>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe_p">Subscribe to our newsletter and get 10%</p>
+          <span class="break-point">off your first purchase</span> <br />
+          <br />
+          <span class="input">
+            <input
+              type="text"
+              placeholder="Enter email address"
+              style="padding: 2px"
+            />
+            <i
+              class="fa-solid fa-chevron-right"
+              style="background: #d9d9d9; padding: 2.5px; margin-left: -4.5px"
+            ></i>
+          </span>
+        </div>
+      </div>
+      <br />
+      <hr class="hr" />
+      <div style="margin-left: 5px; margin-top: 20px">
+        <p>© Tmart - All rights reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
